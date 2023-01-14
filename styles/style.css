@@ -186,7 +186,9 @@ Latest course styles
 .course-section{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-items:flex-start;
+    align-items:flex-start;
+    
 }
 
 .course-description{
@@ -198,14 +200,28 @@ Latest course styles
     display: flex;
     flex-direction: row;
     gap: 15px;
-   justify-content: space-evenly;
+   justify-content: space-between;
+   align-items: center;
 }
 
-.star-icon i {
-    color: tomato;
-    
+.fa-solid.filled {
+    color: rgb(202, 183, 5);    
+}
+.fa-star {
+    color: rgb(150, 148, 122);    
 }
 
-.star .time{ 
-    font-color: #9F9F9F;
+.fa-star, .time {
+    font-size: 14px;
+    font-weight:600;
+}
+
+.clock-hr {
+    font-size: 14px;
+    background: #f7d5d5;
+    border: none;
+    border-radius: 15px;
+    padding: 5px;
+    color:rgb(233, 94, 94);
+   
 }
